@@ -25,14 +25,14 @@
               - name: wan2
                 interface: wan2
                 
-   - name: make SDWAN template
-      fmgr_generic:
-        method: set
-        params:
-          - url: '/pm/wanprof/adom/{{adom}}'
-            data:
-              - name: '{{sdwan_tpt}}'
-                type: wanprof
+    - name: make SDWAN template
+       fmgr_generic:
+         method: set
+         params:
+           - url: '/pm/wanprof/adom/{{adom}}'
+             data:
+               - name: '{{sdwan_tpt}}'
+                 type: wanprof
 
     - name: set SDWAN template fields
       fmgr_generic:
