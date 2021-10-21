@@ -8,23 +8,6 @@
      ansible_httpapi_port: 443
   tasks:
 
-    - name: add WAN1
-      fmgr_generic:
-        method: add
-        params:
-          - url:  '/pm/config/adom/{{adom}}/obj/dynamic/virtual-wan-link/members'
-            data:
-              - name: wan1
-                interface: wan1
-    - name: add WAN2
-      fmgr_generic:
-        method: add
-        params:
-          - url:  '/pm/config/adom/{{adom}}/obj/dynamic/virtual-wan-link/members'
-            data:
-              - name: wan2
-                interface: wan2
-                
     - name: make SDWAN template
       fmgr_generic:
          method: set
