@@ -26,7 +26,7 @@
                 interface: wan2
                 
     - name: make SDWAN template
-       fmgr_generic:
+      fmgr_generic:
          method: set
          params:
            - url: '/pm/wanprof/adom/{{adom}}'
