@@ -38,13 +38,12 @@
       fmgr_generic:
         method: set
         params:
-          - url: '/pm/config/adom/{{adom}}/wanprof/{{sdwan_tpt}}/system/sdwan'
+          - url: '/pm/wanprof/adom/{{adom}}/{{sdwan_tpt}}'
             data:
               members:
                 - seq-num: 1
                   zone: virtual-wan-link
-                  _dynamic-member: [ wan1 ]
-                  interface: null
+                  interface: [ wan1 ]
                   ingress-spillover-threshold: 0
                   spillover-threshold: 0
                   weight: 1
@@ -58,8 +57,7 @@
                   source6: '::'
                 - seq-num: 2
                   zone: virtual-wan-link
-                  _dynamic-member: [ wan2 ]
-                  interface: null
+                  interface: [ wan2 ]
                   ingress-spillover-threshold: 0
                   spillover-threshold: 0
                   weight: 1
