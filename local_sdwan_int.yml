@@ -17,6 +17,23 @@
                - name: '{{sdwan_tpt}}'
                  type: wanprof
 
+    - name: add WAN1
+      fmgr_generic:
+        method: add
+        params:
+          - url:  '/pm/config/adom/{{adom}}/obj/dynamic/virtual-wan-link/members'
+            data:
+              - name: wan1
+                interface: wan1
+    - name: add WAN2
+      fmgr_generic:
+        method: add
+        params:
+          - url:  '/pm/config/adom/{{adom}}/obj/dynamic/virtual-wan-link/members'
+            data:
+              - name: wan2
+                interface: wan2
+                
     - name: set SDWAN template fields
       fmgr_generic:
         method: set
