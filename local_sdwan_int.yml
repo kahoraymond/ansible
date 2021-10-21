@@ -43,7 +43,8 @@
               members:
                 - seq-num: 1
                   zone: virtual-wan-link
-                  interface: [ wan1 ]
+                  _dynamic-member: [ wan1 ]
+                  interface: null
                   ingress-spillover-threshold: 0
                   spillover-threshold: 0
                   weight: 1
@@ -57,7 +58,8 @@
                   source6: '::'
                 - seq-num: 2
                   zone: virtual-wan-link
-                  interface: [ wan2 ]
+                  _dynamic-member: [ wan2 ]
+                  interface: null
                   ingress-spillover-threshold: 0
                   spillover-threshold: 0
                   weight: 1
