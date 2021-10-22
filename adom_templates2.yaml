@@ -968,7 +968,7 @@
       fmgr_generic:
         method: set
         params:
-          - url: '/pm/config/adom/{{adom}}/wanprof/{{sdwan_tpt}}/system/sdwan'
+          - url: '/pm/wanprof/adom/{{adom}}/{{sdwan_tpt}}'
             data:
               members:
                 - seq-num: 1
