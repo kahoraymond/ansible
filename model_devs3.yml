@@ -347,7 +347,7 @@
                       edit "onboarding"
                           set vdom "root"
                           set ip 169.254.15.1 255.255.255.0
-                          set description "NAC Onboarding VLAN"
+                          set description "# Onboarding VLAN"
                           set alias "onboarding.fortilink"
                           set security-mode captive-portal
                           set device-identification enable
