@@ -167,7 +167,7 @@
                   ### FAP
                   config wireless-controller vap
                       edit "SSID-P_Guest"
-                          set ssid "Acme_Guest_POC"
+                          set ssid "BP_Guest_POC"
                           set security open
                           set local-bridging enable
                           set intra-vap-privacy enable
@@ -175,7 +175,7 @@
                           set _intf_ip 0.0.0.0 0.0.0.0
                       next
                       edit "SSID-P_Secure"
-                          set ssid "Acme_Secure_POC"
+                          set ssid "BP_Secure_POC"
                           set passphrase "P_Secure" # 5..8 chars
                           set local-bridging enable
                           set schedule "always"
@@ -607,7 +607,7 @@
                           set logtraffic all
                       next
                       edit 3
-                          set name "IPv4-P_Acme-RADIO"
+                          set name "IPv4-P_BP-RADIO"
                           set srcintf "POS"
                           set dstintf "virtual-wan-link"
                           set srcaddr "all"
