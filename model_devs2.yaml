@@ -243,7 +243,7 @@
                       #    set lldp-reception disable
                       #    set lldp-transmission disable
                       #    set stp enable
-                      next
+                      # next
                       #edit "vsw.fortilink"
                       #    set vdom "root"
                       #    set ip 0.0.0.0 0.0.0.0
