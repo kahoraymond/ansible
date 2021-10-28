@@ -354,7 +354,7 @@
                           set switch-controller-access-vlan enable
                           set switch-controller-feature nac
                           set interface "fortilink"
-                          set vlanid 4099
+                          set vlanid 4094
                       next
                       edit "FortiExtender"
                           set vdom "root"
