@@ -234,15 +234,15 @@
                           set vlanid 4080
                           set color 6
                       next
-                      edit "internal"
-                          set vdom "root"
-                          set ip 192.168.99.99/24
-                          set allowaccess ssh https fgfm ping fabric
-                          set description Mgmt
-                          set alias Mgmt
-                          set lldp-reception disable
-                          set lldp-transmission disable
-                          set stp enable
+                      # edit "internal"
+                      #    set vdom "root"
+                      #    set ip 192.168.99.99/24
+                      #    set allowaccess ssh https fgfm ping fabric
+                      #    set description Mgmt
+                      #    set alias Mgmt
+                      #    set lldp-reception disable
+                      #    set lldp-transmission disable
+                      #    set stp enable
                       next
                       #edit "vsw.fortilink"
                       #    set vdom "root"
