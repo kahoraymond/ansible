@@ -966,14 +966,15 @@
                 
     - name: set SDWAN template fields
       fmgr_generic:
-        method: set
+        method: replace
         params:
-          - url: '/pm/wanprof/adom/{{adom}}/{{sdwan_tpt}}'
+          - url: '/pm/config/adom/{{adom}}/wanprof/{{sdwan_tpt}}/system/sdwan'
             data:
               members:
                 - seq-num: 1
+                  _dynamic-member: [ wan1 ]
                   zone: virtual-wan-link
-                  interface: [ wan1 ]
+                  interface: null
                   ingress-spillover-threshold: 0
                   spillover-threshold: 0
                   weight: 1
@@ -986,8 +987,9 @@
                   source: '0.0.0.0'
                   source6: '::'
                 - seq-num: 2
+                  _dynamic-member: [ wan2 ]
                   zone: virtual-wan-link
-                  interface: [ wan2 ]
+                  interface: null
                   ingress-spillover-threshold: 0
                   spillover-threshold: 0
                   weight: 1
