@@ -955,14 +955,14 @@
             data:
               - name: wan1
                 interface: wan1
-    - name: add WAN2
+    - name: add wwan
       fmgr_generic:
         method: add
         params:
           - url:  '/pm/config/adom/{{adom}}/obj/dynamic/virtual-wan-link/members'
             data:
-              - name: wan2
-                interface: wan2
+              - name: wwan
+                interface: wwan
                 
     - name: set SDWAN template fields
       fmgr_generic:
@@ -987,7 +987,7 @@
                   source: '0.0.0.0'
                   source6: '::'
                 - seq-num: 2
-                  _dynamic-member: [ wan2 ] 
+                  _dynamic-member: [ wwan ] 
                   zone: virtual-wan-link
                   interface: null
                   ingress-spillover-threshold: 0
