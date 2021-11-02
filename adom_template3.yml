@@ -186,7 +186,7 @@
                   config wireless-controller wtp-profile
                       edit "{{fap_prof}}"
                          config platform
-                            set type 24D
+                            set type 221E
                           end
                           set ap-country US
                           set allowaccess https ssh snmp
