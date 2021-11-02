@@ -1002,15 +1002,4 @@
                   source: '0.0.0.0'
                   source6: '::'
 
-              health-check:
-                - name: 'Default_AWS'
-                  _dynamic-server: 'Default_AWS'
-                - name: 'Default_FortiGuard'
-                  _dynamic-server: 'Default_FortiGuard'
-                - name: 'Default_Gmail'
-                  _dynamic-server: 'Default_Gmail'
-                - name: "Default_Google Search"
-                  _dynamic-server: "Default_Google Search"
-                - name: "Default_Office_365"
-                  _dynamic-server: "Default_Office_365"
 ### IPsec template
