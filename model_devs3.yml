@@ -232,6 +232,7 @@
                           set role lan
                           set interface "fortilink"
                           set vlanid 4080
+                          set auto-auth-extension-device enable
                           set color 6
                       next
                       # edit "internal"
