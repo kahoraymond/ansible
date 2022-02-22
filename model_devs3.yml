@@ -548,12 +548,7 @@
                       set authorized enable
                       config modem1
                         set ifname "FortiExtender"
-                         #1  set sim1-pin enable
-                         #1  set sim1-pin-code 654321
-                        config auto-switch
-                          set switch-back-time "5:1 "
                         end
-                      end
                      next
                   end
                   config system global
